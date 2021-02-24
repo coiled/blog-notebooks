@@ -29,7 +29,7 @@ coiled.create_software_environment(
 )
 
 coiled.create_job_configuration(
-    name="optuna-xgboost",
+    name="xgboost-on-coiled",
     software=software_name,
     command=[
         "/bin/bash",
