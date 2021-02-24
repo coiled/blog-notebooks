@@ -1,0 +1,31 @@
+
+name: Build notebooks
+
+on:
+  push:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example: ["xgboost-mortgage", "hyperparameter-tuning"]
+    env:
+      DASK_COILED__SERVER: https://cloud.coiled.io
+      DASK_COILED__TOKEN: ${{ secrets.DASK_COILED__TOKEN }}
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v1
+
+      - name: Install Coiled
+        run: python -m pip install coiled
+
+      - name: Build ${{ matrix.example }} notebook
+        run: python create-notebook.py
+        working-directory: ${{ matrix.example }}
