@@ -1,0 +1,44 @@
+{
+    "data": {
+        "file-browser-filebrowser:cwd": {
+            "path": ""
+        },
+        "layout-restorer:data": {
+            "main": {
+                "dock": {
+                    "type": "tab-area",
+                    "currentIndex": 0,
+                    "widgets": [
+                        "notebook:hyperparameter-tuning.ipynb"
+                    ]
+                },
+                "mode": "multiple-document",
+                "current": "notebook:hyperparameter-tuning.ipynb"
+            },
+            "left": {
+                "collapsed": true,
+                "widgets": [
+                    "filebrowser",
+                    "running-sessions",
+                    "command-palette",
+                    "jp-property-inspector",
+                    "tab-manager",
+                    "extensionmanager.main-view"
+                ]
+            },
+            "right": {
+                "collapsed": true,
+                "widgets": []
+            }
+        },
+        "notebook:quickstart.ipynb": {
+            "data": {
+                "path": "hyperparameter-tuning.ipynb",
+                "factory": "Notebook"
+            }
+        }
+    },
+    "metadata": {
+        "id": "/lab"
+    }
+}
