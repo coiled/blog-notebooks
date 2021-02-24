@@ -1,6 +1,6 @@
 import coiled
 
-software_name = "xgboost-on-coiled"
+software_name = "blog-notebooks/xgboost-on-coiled"
 coiled.create_software_environment(
     name=software_name,
     container="coiled/notebook:latest",
@@ -29,7 +29,7 @@ coiled.create_software_environment(
 )
 
 coiled.create_job_configuration(
-    name="xgboost-on-coiled",
+    name="blog-notebooks/xgboost-on-coiled",
     software=software_name,
     command=[
         "/bin/bash",
