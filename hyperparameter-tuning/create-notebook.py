@@ -18,7 +18,7 @@ coiled.create_software_environment(
             "python-snappy",
             "s3fs",
             "scikit-learn",
-            "xgboost>=1.3.0"
+            "xgboost>=1.3.0",
             "optuna<2.4.0",
             "numpy",
             "xgboost",

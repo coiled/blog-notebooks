@@ -1,6 +1,6 @@
 import coiled
 
-software_name = "blog-notebooks/xgboost-on-coiled"
+software_name = "xgboost-on-coiled"
 coiled.create_software_environment(
     name=software_name,
     container="coiled/notebook:latest",
@@ -18,7 +18,7 @@ coiled.create_software_environment(
             "python-snappy",
             "s3fs",
             "scikit-learn",
-            "xgboost>=1.3.0"
+            "xgboost>=1.3.0",
             "optuna<2.4.0",
             "numpy",
             "xgboost",
@@ -29,7 +29,7 @@ coiled.create_software_environment(
 )
 
 coiled.create_job_configuration(
-    name="blog-notebooks/optuna-xgboost",
+    name="optuna-xgboost",
     software=software_name,
     command=[
         "/bin/bash",
