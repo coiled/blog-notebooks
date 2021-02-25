@@ -1,6 +1,6 @@
 import coiled
 
-software_name = "blog-notebooks/xgboost-on-coiled"
+software_name = "blog-notebooks/optuna-xgboost"
 coiled.create_software_environment(
     name=software_name,
     container="coiled/notebook:latest",
