@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        example: ["xgboost-mortgage", "hyperparameter-tuning"]
+        example: ["xgboost-mortgage", "hyperparameter-tuning", "energy-landscape"]
     env:
       DASK_COILED__SERVER: https://cloud.coiled.io
       DASK_COILED__TOKEN: ${{ secrets.DASK_COILED__TOKEN }}
