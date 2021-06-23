@@ -7,8 +7,7 @@ coiled.create_software_environment(
     conda={
         "channels": ["conda-forge"],
         "dependencies": [
-            "python=3.8", 
-            "coiled=0.0.36",
+            "coiled",
             "dask",
             "dask-ml",
             "dask>=2.23.0",
@@ -23,7 +22,7 @@ coiled.create_software_environment(
             "numpy",
             "xgboost",
             "joblib",
-      ]
+        ],
     },
     pip=["dask-optuna"],
 )

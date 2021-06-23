@@ -7,19 +7,19 @@ coiled.create_software_environment(
     conda={
         "channels": ["conda-forge"],
         "dependencies": [
-            "python=3.8", 
-            "coiled=0.0.37",
+            "coiled",
             "dask-ml",
             "dask>=2.23.0",
             "fastparquet",
             "matplotlib",
             "pandas>=1.1.0",
             "python-snappy",
+            "seaborn",
             "s3fs",
             "scikit-learn",
             "xgboost>=1.3.0",
             "optuna<2.4.0",
-      ]
+        ],
     },
     pip=["dask-optuna", "fastdtw"],
 )
